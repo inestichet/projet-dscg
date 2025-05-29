@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmission d'entreprise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #c9b59a;
+            color: #fff;
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            background-color: transparent;
+            padding: 20px;
+        }
+        .navbar a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 90vh;
+            padding: 40px;
+        }
+        .left {
+            flex: 1;
+            text-align: center;
+        }
+        .left img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 10px solid white;
+            object-fit: cover;
+        }
+        .right {
+            flex: 1;
+            color: white;
+        }
+        .right h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        .right h2 {
+            background-color: white;
+            color: #5b4b3c;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 24px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .author {
+            position: absolute;
+            top: 30px;
+            left: 80px;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+        .dots {
+            position: absolute;
+            left: 70px;
+            top: 150px;
+            font-size: 24px;
+        }
+        .dots::after {
+            content: "◦ ◦ ◦ ◦";
+            letter-spacing: 10px;
+        }
+        .dots-right {
+            position: absolute;
+            right: 70px;
+            bottom: 70px;
+            font-size: 24px;
+        }
+        .dots-right::after {
+            content: "◦ ◦ ◦ ◦";
+            letter-spacing: 10px;
+        }
+        .background-shape {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 60%;
+            background-color: #a3917c;
+            border-bottom-left-radius: 50% 40%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Article</a>
+        <a href="#">Arbre décisionnel</a>
+        <a href="#">Calcul de l’impôt</a>
+    </div>
+    <div class="author">Ines Tichet</div>
+    <div class="dots"></div>
+    <div class="dots-right"></div>
+    <div class="container">
+        <div class="left">
+            <img src="team.jpg" alt="Équipe travaillant sur un ordinateur">
+        </div>
+        <div class="right">
+            <h2>Bienvenue sur le site de</h2>
+            <h1>la transmission<br>d’entreprise</h1>
+        </div>
+    </div>
+    <div class="background-shape"></div>
+</body>
+</html>
